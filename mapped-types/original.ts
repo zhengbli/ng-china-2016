@@ -34,13 +34,9 @@ export class TestComponent {
 
     onSubmit() {
         // no errors here even without validation
-        registerOnServer(this.registerInfo);
         if (validateRegisterInfo(this.registerInfo)) {
             registerOnServer(this.registerInfo);
         }
-
-        // no errors here even either
-        registerOnServer(this.registerInfo);
     }
 }
 

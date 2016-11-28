@@ -34,13 +34,9 @@ export class TestComponent {
     registerInfo: OptionalRegisterInformation;
 
     onSubmit() {
-        // errors when used before checking
-        registerOnServer(this.registerInfo);
         if (validateRegisterInfo(this.registerInfo)) {
             registerOnServer(this.registerInfo);
         }
-        // errors when used before checking
-        registerOnServer(this.registerInfo);
     }
 }
 

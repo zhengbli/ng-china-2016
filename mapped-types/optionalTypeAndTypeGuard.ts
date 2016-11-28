@@ -44,14 +44,9 @@ export class TestComponent {
     registerInfo: OptionalRegisterInformation;
 
     onSubmit() {
-        // errors when use unchecked info object
-        registerOnServer(this.registerInfo);
         if (validateRegisterInfo(this.registerInfo)) {
             registerOnServer(this.registerInfo);
         }
-
-        // errors when use unchecked info object
-        registerOnServer(this.registerInfo);
     }
 }
 
