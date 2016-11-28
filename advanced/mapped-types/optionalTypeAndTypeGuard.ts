@@ -44,9 +44,11 @@ export class TestComponent {
     registerInfo: OptionalRegisterInformation;
 
     onSubmit() {
+        registerOnServer(this.registerInfo);
         if (validateRegisterInfo(this.registerInfo)) {
             registerOnServer(this.registerInfo);
         }
+        registerOnServer(this.registerInfo);
     }
 }
 
