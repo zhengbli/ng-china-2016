@@ -1,22 +1,23 @@
-namespace AsyncAwaitDemo {
+namespace PromiseDemo {
     let dataOnServer = [];
-    async function getDataFromServer() {
-        return dataOnServer;
+
+    function getDataFromServer() {
+        return Promise.resolve(dataOnServer);
     }
 
     function printData(data: number[]) {
         console.log(data);
     }
 
-    async function sendDataToServer(data: number[]) {
+    function sendDataToServer(data: number[]) {
         dataOnServer = data;
-        return true;
+        return Promise.resolve(true);
     }
 
-    async function test() {
-        await sendDataToServer([1, 2, 3]);
-        const data = await getDataFromServer();
-        printData(data);
+    function test() {
+        sendDataToServer([1,2,3])
+        .then(_ => getDataFromServer())
+        .then(data => printData(data));
     }
 
     test();
