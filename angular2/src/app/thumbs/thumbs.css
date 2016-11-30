@@ -1,0 +1,44 @@
+img {
+  border: 1px transparent solid;
+}
+
+.thumb,
+.thumb:hover,
+.thumb:active {
+  box-shadow: none;
+  user-select: none;
+  border: none;
+  cursor: pointer;
+  filter: none;
+  font-weight: normal;
+  line-height: inherit;
+  margin: 0;
+  min-width: 0;
+  outline: none;
+  padding: 0;
+  text-align: left;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.thumb {
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+}
+
+.up {
+  background-image: url('assets/thumbs_up_black.svg');
+}
+
+.down {
+  background-image: url('assets/thumbs_down_black.svg');
+}
+
+.up.selected {
+  background-image: url('assets/thumbs_up_selected.svg');
+}
+
+.down.selected {
+  background-image: url('assets/thumbs_down_selected.svg');
+}
