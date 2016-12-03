@@ -1,0 +1,9 @@
+<button type="button" class="thumb up"
+    aria-label="Like this video"
+    title="Like"
+    [class.selected]="state == UP_T" (click)="onClick(UP_T)"></button>
+
+<button type="button" class="thumb down"
+    aria-label="Dislike this video"
+    title="Dislike"
+    [class.selected]="state == DOWN_T" (click)="onClick(DOWN_T)"></button>
