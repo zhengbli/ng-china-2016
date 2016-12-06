@@ -12,7 +12,7 @@ function shipWeight() {
     return parseInt(document.getElementById('weight').textContent);
 }
 /*
- * @param {(string | string[])} emailAddr - 一个邮件地址，或者是一个邮件地址数组
+ * @param emailAddr - 一个邮件地址，或者是一个邮件地址数组
  */
 function sendUpdates(emailAddr) {
     function sendEmail(addr) {
