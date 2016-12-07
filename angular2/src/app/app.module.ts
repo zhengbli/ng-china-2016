@@ -4,7 +4,6 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { FinalComponent } from './final/final.component';
 import { Thumbs } from './thumbs/thumbs.component';
 
 import { ItemStoreService } from './item-store.service';

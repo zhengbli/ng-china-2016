@@ -1,9 +1,0 @@
-<h1>My favorite foods:</h1>
-<ol>
-  <li *ngFor="let item of items">
-    <h2>{{item}}</h2>
-    <vote-thumbs (change)="onChange($event)"></vote-thumbs>
-  </li>
-</ol>
-<h2>Total likes: {{totalLikes}}</h2>
-

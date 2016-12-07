@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {} from './thumbs/thumbs.component';
+import {} from './food_store';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  foods: string[];
 }
