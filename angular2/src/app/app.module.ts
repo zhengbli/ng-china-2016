@@ -6,12 +6,11 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { Thumbs } from './thumbs/thumbs.component';
 
-import { ItemStoreService } from './item-store.service';
+import { FoodStore } from './food_store';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FinalComponent,
     Thumbs
   ],
   imports: [
@@ -19,7 +18,7 @@ import { ItemStoreService } from './item-store.service';
     FormsModule,
     HttpModule
   ],
-  providers: [ItemStoreService],
+  providers: [FoodStore],
   // Replace with AppComponent for initial state of the demo.
   bootstrap: [AppComponent]
 })
