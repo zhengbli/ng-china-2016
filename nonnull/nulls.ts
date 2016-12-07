@@ -7,21 +7,7 @@ function test(s: string | string[] | null | undefined) {
         s;
     }
 
-    if (typeof s === "object") {
-        s;
-    }
-    else {
-        s;
-    }
-
     if (s == undefined) {
-        s;
-    }
-    else {
-        s;
-    }
-
-    if (typeof s === "undefined") {
         s;
     }
     else {
